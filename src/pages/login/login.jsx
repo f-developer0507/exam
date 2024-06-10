@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./login.css";
 
 const Login = () => {
   const [form, setForm] = useState({});
@@ -13,7 +12,7 @@ const Login = () => {
     e.preventDefault();
     const { userName, userPassword } = form;
     if (userName === "admin" && userPassword === "123") {
-      navigate("/main")
+      navigate("/main");
     } else {
       alert("404");
     }

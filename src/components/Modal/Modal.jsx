@@ -26,6 +26,7 @@ const Modal = ({
           {isEditing ? "Edit Task" : "Add New Task"}
         </h2>
         <input
+          required
           type="text"
           placeholder="Enter task"
           className="w-full p-2 mb-4 border rounded"
@@ -39,10 +40,11 @@ const Modal = ({
         >
           <option value="open">Open</option>
           <option value="pending">Pending</option>
-          <option value="inprog">In Progress</option>
+          <option value="inprog">Inprog</option>
           <option value="complete">Complete</option>
         </select>
-        <button type="submit"
+        <button
+          type="submit"
           className="bg-blue-500 text-white px-4 py-2 rounded mr-2"
           onClick={addTask}
         >
