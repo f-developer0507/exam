@@ -1,0 +1,42 @@
+.posts__list {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.posts__item {
+  position: relative;
+  padding: 30px;
+
+  width: 300px;
+
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.item__id {
+  position: absolute;
+  top: 0;
+  right: 10px;
+
+  font-size: 25px;
+  font-weight: 500;
+  
+  pointer-events: none;
+  opacity: .7;
+}
+
+.item__title {
+  font-size: 17px;
+  text-transform: capitalize;
+}
+
+.item__img-wrapper{
+  margin-bottom: 10px;
+}
+
+.item-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
